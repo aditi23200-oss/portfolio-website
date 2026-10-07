@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditi Kumari | Python Full Stack Developer | Django & React</title>
+  <meta name="description" content="Portfolio of Aditi Kumari - Python Full Stack Developer specializing in Django, Flask, React.js, REST APIs, and MySQL. MCA from BIT Mesra.">
+  <meta name="keywords" content="Aditi Kumari, Python Full Stack Developer, Django Developer, React Developer, REST APIs, BIT Mesra, Software Developer Portfolio">
+  <meta name="author" content="Aditi Kumari">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span><span class="brand-name">Aditi</span><span class="brand-accent">.dev</span><span class="brand-bracket"> /&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-code-branch"></i> Projects</a></li>
+          <li><a href="#playground" class="nav-link"><i class="fa-solid fa-terminal"></i> API Playground</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="resumeModalBtn" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot pulse"></span>
+            <span>Available for Full-Stack & Backend Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Aditi Kumari</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I build </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate <strong>Python Full Stack Developer</strong> with expertise in architecting robust backends with <strong>Django & Flask</strong>, crafting dynamic user experiences with <strong>React.js</strong>, designing clean relational schemas in <strong>MySQL</strong>, and implementing secure <strong>RESTful APIs</strong> with <strong>pytest</strong> automation.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Get In Touch
+            </a>
+            <a href="mailto:aditi23200@gmail.com" class="btn btn-ghost" title="Quick Email">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Direct Mail
+            </a>
+          </div>
+
+          <div class="quick-contact-pills">
+            <div class="pill">
+              <i class="fa-solid fa-location-dot"></i> Bokaro Steel City & Ranchi, India
+            </div>
+            <a href="https://linkedin.com" target="_blank" class="pill pill-link">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" class="pill pill-link">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <div class="pill">
+              <i class="fa-solid fa-phone"></i> +91 8252339540
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Developer Avatar Illustration -->
+          <div class="hero-avatar-wrapper">
+            <img src="assets/hero_avatar.jpg" alt="Aditi Kumari - Python Full Stack Developer" class="hero-avatar-img" loading="eager">
+          </div>
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-buttons">
+                <span class="btn-dot dot-red"></span>
+                <span class="btn-dot dot-yellow"></span>
+                <span class="btn-dot dot-green"></span>
+              </div>
+              <span class="window-title">aditi_developer.py</span>
+              <span class="badge-py">Python 3.11</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="token-keyword">class</span> <span class="token-class">FullStackDeveloper</span>:
+    <span class="token-keyword">def</span> <span class="token-function">__init__</span>(<span class="token-self">self</span>):
+        <span class="token-self">self</span>.name = <span class="token-string">"Aditi Kumari"</span>
+        <span class="token-self">self</span>.degree = <span class="token-string">"MCA @ BIT Mesra (CGPA: 8.12)"</span>
+        <span class="token-self">self</span>.primary_stack = [<span class="token-string">"Python"</span>, <span class="token-string">"Django"</span>, <span class="token-string">"React.js"</span>, <span class="token-string">"MySQL"</span>]
+        <span class="token-self">self</span>.focus = <span class="token-string">"Scalable REST APIs & Clean UI"</span>
+        <span class="token-self">self</span>.status = <span class="token-string">"Ready to make an impact!"</span>
+
+    <span class="token-keyword">def</span> <span class="token-function">get_strengths</span>(<span class="token-self">self</span>):
+        <span class="token-keyword">return</span> [
+            <span class="token-string">"End-to-end Web Architecture"</span>,
+            <span class="token-string">"Relational DB Schema & SQL Optimization"</span>,
+            <span class="token-string">"JWT Authentication & Role-Based Access"</span>,
+            <span class="token-string">"Unit Testing with pytest"</span>
+        ]
+
+<span class="token-comment"># Ready to collaborate</span>
+aditi = <span class="token-function">FullStackDeveloper</span>()</code></pre>
+            </div>
+            <div class="window-footer">
+              <span class="terminal-status"><i class="fa-solid fa-circle-check text-success"></i> Build: passing</span>
+              <span class="terminal-status"><i class="fa-solid fa-vial-circle-check text-info"></i> pytest: 100% passed</span>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-right">
+            <i class="fa-solid fa-server"></i>
+            <div>
+              <span class="badge-number">Django & DRF</span>
+              <span class="badge-label">Backend Excellence</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <i class="fa-brands fa-react text-react"></i>
+            <div>
+              <span class="badge-number">React.js</span>
+              <span class="badge-label">Interactive Frontends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter Strip -->
+      <div class="container">
+        <div class="stats-strip">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <div class="stat-info">
+              <span class="stat-val" data-target="3">3+</span>
+              <span class="stat-text">Production Grade Projects</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="stat-info">
+              <span class="stat-val">8.12</span>
+              <span class="stat-text">MCA CGPA (BIT Mesra)</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="stat-info">
+              <span class="stat-val">100%</span>
+              <span class="stat-text">Schema Normalized & Tested</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="stat-info">
+              <span class="stat-val">3</span>
+              <span class="stat-text">Industry Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Engineering Philosophy -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-sparkles"></i> Overview</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">A snapshot of my background, technical philosophy, and engineering toolkit.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main">
+            <div class="about-bio-header">
+              <div class="bio-avatar">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3>Aditi Kumari</h3>
+                <p class="bio-sub">Python Full Stack Developer • MCA Candidate at BIT Mesra</p>
+              </div>
+            </div>
+            <p class="about-bio-text">
+              I am a results-driven <strong>Python Full Stack Developer</strong> with a strong foundation in building end-to-end web applications. With hands-on experience in <strong>Django, Flask, React.js, and REST APIs</strong>, I bridge the gap between heavy-duty server logic and smooth, intuitive user interfaces.
+            </p>
+            <p class="about-bio-text">
+              Having interned at <strong>Central Coalfield Limited</strong>, I automated internal departmental data workflows, wrote optimized SQL queries, and collaborated with cross-functional teams to deliver reliable software solutions under strict deadlines.
+            </p>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span><strong>Clean Architecture:</strong> Strong grasp of OOPs, MVC pattern, modular APIs & design principles.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span><strong>Reliable Testing:</strong> Writing comprehensive unit tests with <code>pytest</code> for API stability.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span><strong>Modern Deployments:</strong> Experienced with Railway, Heroku, Git version control & CI flows.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-side">
+            <div class="feature-card">
+              <div class="feature-icon icon-purple"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="feature-content">
+                <h4>Backend & REST APIs</h4>
+                <p>Architecting secure, role-based JWT endpoints, pagination, and request validation with Django REST Framework and Flask.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon icon-cyan"><i class="fa-brands fa-react"></i></div>
+              <div class="feature-content">
+                <h4>Frontend Engineering</h4>
+                <p>Developing reusable React components, managing live state, and styling responsive interfaces with clean modern CSS.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon icon-emerald"><i class="fa-solid fa-database"></i></div>
+              <div class="feature-content">
+                <h4>Relational Databases</h4>
+                <p>Designing normalized MySQL schemas, writing complex joins, query optimization, and transaction handling.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon icon-amber"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="feature-content">
+                <h4>Quality & Verification</h4>
+                <p>Writing automated test suites using <code>pytest</code> to ensure bug-free API deployments and seamless integrations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-code"></i> Proficiency</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">Technologies and developer tools I leverage to build production-grade web systems.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-tabs">
+          <button class="filter-btn active" data-category="all">All Skills</button>
+          <button class="filter-btn" data-category="backend">Backend & APIs</button>
+          <button class="filter-btn" data-category="frontend">Frontend</button>
+          <button class="filter-btn" data-category="database">Databases & SQL</button>
+          <button class="filter-btn" data-category="tools">Tools & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Backend Skills -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-info">
+                <h4>Python</h4>
+                <span class="skill-level">Core Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">OOPs, data structures, scripting, algorithm design, and backend logic.</p>
+            <div class="skill-tags">
+              <span>OOPs</span>
+              <span>Decorators</span>
+              <span>Type Hinting</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
+              <div class="skill-info">
+                <h4>Django & DRF</h4>
+                <span class="skill-level">Primary Framework</span>
+              </div>
+            </div>
+            <p class="skill-desc">REST API design, ORM modeling, serializers, authentication, middleware, and signals.</p>
+            <div class="skill-tags">
+              <span>Django REST</span>
+              <span>JWT Auth</span>
+              <span>ORM</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-flask"></i></div>
+              <div class="skill-info">
+                <h4>Flask</h4>
+                <span class="skill-level">Microframework</span>
+              </div>
+            </div>
+            <p class="skill-desc">Lightweight microservices, custom REST blueprints, and modular application dispatch.</p>
+            <div class="skill-tags">
+              <span>Blueprints</span>
+              <span>RESTful</span>
+              <span>SQLAlchemy</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-vial"></i></div>
+              <div class="skill-info">
+                <h4>Pytest & Testing</h4>
+                <span class="skill-level">Test Automation</span>
+              </div>
+            </div>
+            <p class="skill-desc">Writing automated unit tests, mocking database calls, and verifying API response contracts.</p>
+            <div class="skill-tags">
+              <span>Unit Tests</span>
+              <span>Fixtures</span>
+              <span>API Tests</span>
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-react text-react"></i></div>
+              <div class="skill-info">
+                <h4>React.js</h4>
+                <span class="skill-level">Frontend Library</span>
+              </div>
+            </div>
+            <p class="skill-desc">Functional components, hooks, state management, API integration, and virtual DOM handling.</p>
+            <div class="skill-tags">
+              <span>Hooks</span>
+              <span>State</span>
+              <span>Axios / Fetch</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-js text-js"></i></div>
+              <div class="skill-info">
+                <h4>JavaScript (ES6+)</h4>
+                <span class="skill-level">Core Web Tech</span>
+              </div>
+            </div>
+            <p class="skill-desc">Async/Await, Promises, DOM manipulation, event handling, and modern ES features.</p>
+            <div class="skill-tags">
+              <span>ES6+</span>
+              <span>Async/Await</span>
+              <span>DOM</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-html5 text-html"></i></div>
+              <div class="skill-info">
+                <h4>HTML5 & CSS3</h4>
+                <span class="skill-level">UI Structure & Style</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic HTML markup, Flexbox, Grid, CSS custom properties, and fluid responsive design.</p>
+            <div class="skill-tags">
+              <span>Flexbox/Grid</span>
+              <span>Animations</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+
+          <!-- Database Skills -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-database text-mysql"></i></div>
+              <div class="skill-info">
+                <h4>MySQL</h4>
+                <span class="skill-level">Relational Database</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational schema architecture, primary/foreign keys, indexing, and complex SQL joins.</p>
+            <div class="skill-tags">
+              <span>Schema Design</span>
+              <span>Normalization</span>
+              <span>Indexes</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="database">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <div class="skill-info">
+                <h4>SQL Optimization</h4>
+                <span class="skill-level">Data Querying</span>
+              </div>
+            </div>
+            <p class="skill-desc">Crafting high-speed queries for reports, aggregate metrics, and data processing.</p>
+            <div class="skill-tags">
+              <span>Joins & Aggregates</span>
+              <span>Subqueries</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+
+          <!-- Tools & DevOps -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt text-git"></i></div>
+              <div class="skill-info">
+                <h4>Git & GitHub</h4>
+                <span class="skill-level">Version Control</span>
+              </div>
+            </div>
+            <p class="skill-desc">Branch management, pull requests, merge conflict resolution, and collaborative workflows.</p>
+            <div class="skill-tags">
+              <span>Git Flow</span>
+              <span>PR Reviews</span>
+              <span>Repositories</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+              <div class="skill-info">
+                <h4>Deployment Platforms</h4>
+                <span class="skill-level">Cloud Hosting</span>
+              </div>
+            </div>
+            <p class="skill-desc">Deploying production full-stack web applications to Railway and Heroku environments.</p>
+            <div class="skill-tags">
+              <span>Railway</span>
+              <span>Heroku</span>
+              <span>Env Variables</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="skill-info">
+                <h4>VS Code & Jupyter</h4>
+                <span class="skill-level">Development Tools</span>
+              </div>
+            </div>
+            <p class="skill-desc">Advanced debugging, linting, virtual environments, and exploratory notebook analysis.</p>
+            <div class="skill-tags">
+              <span>VS Code</span>
+              <span>Jupyter</span>
+              <span>Virtualenv</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Showcase -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> Portfolio Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">Real-world full-stack applications with functional backends, databases, and modern UIs.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: ShopEasy -->
+          <article class="project-card">
+            <div class="project-banner banner-shopeasy">
+              <div class="project-year-badge">2026</div>
+              <img src="assets/shopeasy.jpg" alt="ShopEasy E-Commerce Application UI" class="project-banner-img" loading="lazy">
+              <!-- <div class="project-status-tag"><i class="fa-solid fa-circle-check"></i> Railway Deployed</div> -->
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag tag-django">Django</span>
+                <span class="tag tag-react">React.js</span>
+                <span class="tag tag-mysql">MySQL</span>
+                <span class="tag tag-api">REST API</span>
+                <span class="tag tag-test">pytest</span>
+              </div>
+
+              <h3 class="project-title">ShopEasy — E-Commerce Web Application</h3>
+              <p class="project-summary">
+                A complete full-stack online shopping platform where users can browse catalog items, search with live filters, manage shopping carts, track orders, and complete a streamlined checkout.
+              </p>
+
+              <div class="project-key-points">
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Engineered REST APIs for product catalog, shopping cart, order lifecycles, and JWT auth.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Designed normalized MySQL schema for users, products, categories, and order items.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Wrote extensive <strong>pytest</strong> test suites verifying all critical business workflows.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="shopeasy">
+                  <i class="fa-solid fa-layer-group"></i> Architecture Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" class="btn-icon" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" class="btn-icon" title="Live Application" onclick="alert('Project deployed on Railway. Demo links configured in portfolio settings!'); return false;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: HireHub -->
+          <article class="project-card">
+            <div class="project-banner banner-hirehub">
+              <div class="project-year-badge">2025</div>
+              <img src="assets/hirehub.jpg" alt="HireHub Job Portal Application UI" class="project-banner-img" loading="lazy">
+              <!-- <div class="project-status-tag"><i class="fa-solid fa-circle-check"></i> Railway Deployed</div> -->
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag tag-django">Django</span>
+                <span class="tag tag-react">React.js</span>
+                <span class="tag tag-mysql">MySQL</span>
+                <span class="tag tag-api">REST API</span>
+              </div>
+
+              <h3 class="project-title">HireHub — Job Portal Web Application</h3>
+              <p class="project-summary">
+                A dual-sided recruitment portal enabling employers to post opportunities and manage applicants, while job seekers search, filter, and track applications with real-time status updates.
+              </p>
+
+              <div class="project-key-points">
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Implemented role-based authentication (Employer vs. Job Seeker) with protected routes.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built interactive React search filters for instant filtering by location, title, and salary range.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Optimized complex MySQL relational queries for sub-100ms job search results.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="hirehub">
+                  <i class="fa-solid fa-layer-group"></i> Architecture Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" class="btn-icon" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" class="btn-icon" title="Live Application" onclick="alert('Project deployed on Railway. Demo links configured in portfolio settings!'); return false;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: TaskFlow -->
+          <article class="project-card">
+            <div class="project-banner banner-taskflow">
+              <div class="project-year-badge">2025</div>
+              <img src="assets/taskflow.jpg" alt="TaskFlow Kanban Task Management UI" class="project-banner-img" loading="lazy">
+              <!-- <div class="project-status-tag"><i class="fa-solid fa-circle-check"></i> Heroku Deployed</div> -->
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag tag-flask">Flask</span>
+                <span class="tag tag-react">React.js</span>
+                <span class="tag tag-mysql">MySQL</span>
+                <span class="tag tag-api">REST API</span>
+                <span class="tag tag-test">pytest</span>
+              </div>
+
+              <h3 class="project-title">TaskFlow — Team Task Management App</h3>
+              <p class="project-summary">
+                A collaborative Kanban productivity tool allowing engineering teams to create project boards, assign members, and manage workflows with smooth drag-and-drop cards across columns.
+              </p>
+
+              <div class="project-key-points">
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Engineered Flask REST APIs for boards, tasks, priority tags, and secure JWT authentication.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built interactive React drag-and-drop board (To Do, In Progress, Done) with instant sync.</span>
+                </div>
+                <div class="key-point">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Verified system reliability with comprehensive <strong>pytest</strong> test suites on Heroku.</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="taskflow">
+                  <i class="fa-solid fa-layer-group"></i> Architecture Details
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" class="btn-icon" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" class="btn-icon" title="Live Application" onclick="alert('Project deployed on Heroku with production database setup!'); return false;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive REST API & Terminal Playground
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-terminal"></i> Recruiter Interactive Demo</span>
+          <h2 class="section-title">Interactive <span class="gradient-text">REST API Playground</span></h2>
+          <p class="section-desc">Test simulated live endpoints demonstrating backend API design, schema models, and responses.</p>
+        </div>
+
+        <div class="playground-wrapper">
+          <div class="playground-sidebar">
+            <div class="playground-nav-title">Select Endpoint</div>
+            <button class="api-btn active" data-endpoint="profile">
+              <span class="method get">GET</span>
+              <span class="path">/api/v1/developer/profile</span>
+            </button>
+            <button class="api-btn" data-endpoint="projects">
+              <span class="method get">GET</span>
+              <span class="path">/api/v1/projects/featured</span>
+            </button>
+            <button class="api-btn" data-endpoint="skills">
+              <span class="method get">GET</span>
+              <span class="path">/api/v1/skills/matrix</span>
+            </button>
+            <button class="api-btn" data-endpoint="hire">
+              <span class="method post">POST</span>
+              <span class="path">/api/v1/hire-aditi</span>
+            </button>
+            <button class="api-btn" data-endpoint="tests">
+              <span class="method get">GET</span>
+              <span class="path">/api/v1/pytest/report</span>
+            </button>
+
+            <div class="api-tip">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>Click any endpoint to inspect response payloads, headers, and status codes.</span>
+            </div>
+          </div>
+
+          <div class="playground-terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="terminal-endpoint-display" id="terminalUrlDisplay">
+                <span class="method-tag" id="currentMethod">GET</span>
+                <span class="host-url">https://api.aditikdm.dev<span id="currentPath">/api/v1/developer/profile</span></span>
+              </div>
+              <button class="btn-terminal-run" id="btnExecuteApi">
+                <i class="fa-solid fa-play"></i> Run Request
+              </button>
+            </div>
+
+            <div class="terminal-response-container">
+              <div class="response-meta-bar">
+                <div class="response-stat">
+                  <span class="meta-label">Status:</span>
+                  <span class="meta-val status-200" id="responseStatus">200 OK</span>
+                </div>
+                <div class="response-stat">
+                  <span class="meta-label">Time:</span>
+                  <span class="meta-val" id="responseTime">42 ms</span>
+                </div>
+                <div class="response-stat">
+                  <span class="meta-label">Content-Type:</span>
+                  <span class="meta-val">application/json</span>
+                </div>
+                <button class="btn-copy-json" id="btnCopyJson" title="Copy JSON Output">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+              </div>
+
+              <div class="terminal-code-view">
+                <pre><code id="jsonResponseDisplay" class="json-code"></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Experience & Education Timeline -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="experience-education-grid">
+          
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <div class="column-header">
+              <div class="header-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <h3 class="column-title">Work Experience</h3>
+                <p class="column-sub">Internship & Industry Exposure</p>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-time"><i class="fa-regular fa-calendar"></i> June 2025</div>
+                  <h4 class="timeline-role">Software Developer Intern</h4>
+                  <div class="timeline-company">
+                    <i class="fa-regular fa-building"></i> <strong>Central Coalfield Limited</strong> — Ranchi, Jharkhand
+                  </div>
+                  <ul class="timeline-bullets">
+                    <li>Built web-based internal tools using <strong>Python, Django, and MySQL</strong> to automate manual data entry workflows across departments.</li>
+                    <li>Wrote and optimized complex <strong>SQL queries</strong> to pull large dataset aggregates and generate reports rapidly for stakeholders.</li>
+                    <li>Collaborated closely with engineering team members to gather technical requirements and deliver reliable software tools on schedule.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>MySQL</span>
+                    <span>SQL Query Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column" id="education">
+            <div class="column-header">
+              <div class="header-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3 class="column-title">Education</h3>
+                <p class="column-sub">Academic Background</p>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <!-- MCA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-time"><i class="fa-regular fa-calendar"></i> Aug 2024 – May 2026</div>
+                  <div class="timeline-cgpa-badge">CGPA: 8.12 / 10.0</div>
+                  <h4 class="timeline-role">Master of Computer Applications (MCA)</h4>
+                  <div class="timeline-company">
+                    <i class="fa-solid fa-university"></i> <strong>Birla Institute of Technology (BIT), Mesra</strong> — Ranchi, Jharkhand
+                  </div>
+                  <p class="timeline-desc">
+                    Comprehensive study of Advanced Data Structures & Algorithms, Object-Oriented Software Design, Database Management Systems, Distributed Computing, and Web Engineering.
+                  </p>
+                </div>
+              </div>
+
+              <!-- BCA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-time"><i class="fa-regular fa-calendar"></i> Aug 2021 – May 2024</div>
+                  <div class="timeline-cgpa-badge">CGPA: 7.77 / 10.0</div>
+                  <h4 class="timeline-role">Bachelor of Computer Applications (BCA)</h4>
+                  <div class="timeline-company">
+                    <i class="fa-solid fa-university"></i> <strong>Birla Institute of Technology (BIT), Mesra</strong> — Ranchi, Jharkhand
+                  </div>
+                  <p class="timeline-desc">
+                    Foundational coursework in Computer Science, C/C++, Java, Relational Databases, Web Technologies, Software Engineering Principles, and Operating Systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-award"></i> Verification</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+          <p class="section-desc">Certified credentials validating my full-stack, database, and version control skills.</p>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon icon-python"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-meta">
+              <span class="cert-year">2025</span>
+              <span class="cert-issuer">Udemy</span>
+            </div>
+            <h3 class="cert-title">Python Full Stack Developer Path</h3>
+            <p class="cert-desc">Comprehensive training covering Python core, Django backend architecture, REST API design, React.js frontend integration, and database operations.</p>
+            <div class="cert-badge"><i class="fa-solid fa-circle-check"></i> Verified Credential</div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon icon-sql"><i class="fa-solid fa-database"></i></div>
+            <div class="cert-meta">
+              <span class="cert-year">2025</span>
+              <span class="cert-issuer">SkillCourse</span>
+            </div>
+            <h3 class="cert-title">SQL for Developers Certification</h3>
+            <p class="cert-desc">Advanced relational database querying, schema design, complex joins, subqueries, transaction isolation, and query execution plan optimization.</p>
+            <div class="cert-badge"><i class="fa-solid fa-circle-check"></i> Verified Credential</div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon icon-git"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="cert-meta">
+              <span class="cert-year">2024</span>
+              <span class="cert-issuer">Coursera</span>
+            </div>
+            <h3 class="cert-title">Git & GitHub Version Control</h3>
+            <p class="cert-desc">Mastery of collaborative source control, Git branching strategies, pull request workflows, conflict management, and repository automation.</p>
+            <div class="cert-badge"><i class="fa-solid fa-circle-check"></i> Verified Credential</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle"><i class="fa-solid fa-comments"></i> Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-desc">I am actively looking for full-time Full Stack & Python Developer opportunities. Let's discuss how I can contribute to your team!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Email Address</span>
+                <a href="mailto:aditi23200@gmail.com" class="contact-card-val">aditi23200@gmail.com</a>
+              </div>
+              <button class="btn-copy-action" data-copy="aditi23200@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Phone Number</span>
+                <a href="tel:+918252339540" class="contact-card-val">+91 8252339540</a>
+              </div>
+              <button class="btn-copy-action" data-copy="8252339540" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Current Location</span>
+                <span class="contact-card-val">Bokaro Steel City & Ranchi, Jharkhand</span>
+              </div>
+            </div>
+
+            <div class="social-connect-box">
+              <h4>Social Profiles</h4>
+              <div class="social-links-grid">
+                <a href="https://linkedin.com" target="_blank" class="social-btn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-btn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repositories</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form -->
+          <div class="contact-form-panel">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name <span class="req">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Recruiter / Hiring Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Full-Stack Developer Opportunity" value="Opportunity for Python Full Stack Developer">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Aditi, we came across your portfolio and would like to discuss a role at our company..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btnSubmitForm">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">
+          <span class="brand-bracket">&lt;</span>Aditi.dev<span class="brand-bracket"> /&gt;</span>
+        </a>
+        <p>Built with clean HTML, modern CSS, and JavaScript. Designed for performance and visual impact.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <button id="btnBackToTop" class="btn-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <span class="copyright">© 2026 Aditi Kumari. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="projectModalOverlay">
+    <div class="modal-card" id="projectModalCard">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-badge-group">
+          <span class="modal-badge" id="modalCategory">Full Stack</span>
+          <span class="modal-badge badge-year" id="modalYear">2026</span>
+        </div>
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+        <div class="modal-tags" id="modalTags"></div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Project Overview</h4>
+          <p id="modalOverview"></p>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-layer-group"></i> Architecture & Key Features</h4>
+          <ul class="modal-list" id="modalFeatures"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-server"></i> Tech Stack & Database Model</h4>
+          <div class="modal-tech-box" id="modalTechBox"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" class="btn btn-secondary" id="modalGithubBtn">
+          <i class="fa-brands fa-github"></i> View GitHub Repo
+        </a>
+        <button class="btn btn-primary" onclick="window.location.href='#contact'; document.getElementById('projectModalOverlay').classList.remove('active');">
+          <i class="fa-solid fa-comments"></i> Discuss This Project
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview & Print Modal -->
+  <div class="modal-overlay" id="resumeModalOverlay">
+    <div class="modal-card resume-modal-card">
+      <button class="modal-close" id="resumeModalCloseBtn" aria-label="Close resume modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="resume-modal-header">
+        <div>
+          <h2>Aditi Kumari — Resume</h2>
+          <p>Python Full Stack Developer | Django | React.js | REST APIs</p>
+        </div>
+        <div class="resume-modal-actions">
+          <button class="btn btn-primary btn-sm" onclick="window.print()">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-preview-sheet" id="printableResume">
+        <div class="r-header">
+          <h1>ADITI KUMARI</h1>
+          <div class="r-sub">Python Full Stack Developer | Django | React.js | REST APIs</div>
+          <div class="r-contacts">
+            <span>Bokaro Steel City, Jharkhand</span> • 
+            <span>+91 8252339540</span> • 
+            <span>aditi23200@gmail.com</span> • 
+            <span>LinkedIn</span>
+          </div>
+        </div>
+
+        <hr class="r-divider">
+
+        <div class="r-section">
+          <h3>PROFESSIONAL SUMMARY</h3>
+          <p>Python Full Stack Developer with strong foundation in building end-to-end web applications using Django, Flask, React.js, and REST APIs. Skilled in designing relational database schemas with MySQL and delivering responsive, user-friendly interfaces. Strong foundation in OOPS, data structures, and software engineering principles.</p>
+        </div>
+
+        <div class="r-section">
+          <h3>TECHNICAL SKILLS</h3>
+          <p><strong>Languages:</strong> Python, JavaScript, SQL</p>
+          <p><strong>Backend:</strong> Django, Flask, Django REST Framework, REST API Design</p>
+          <p><strong>Frontend:</strong> React.js, HTML, CSS</p>
+          <p><strong>Databases:</strong> MySQL</p>
+          <p><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Jupyter Notebook</p>
+        </div>
+
+        <div class="r-section">
+          <h3>PROJECTS</h3>
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>ShopEasy — E-Commerce Web Application</strong>
+              <span>2026</span>
+            </div>
+            <div class="r-item-sub">Django, React.js, MySQL, REST API</div>
+            <ul>
+              <li>Built a complete online shopping platform where customers can browse and buy products, add items to cart, and track their orders.</li>
+              <li>Created REST APIs using Django for product listing, shopping cart, order management, and user login with JWT tokens.</li>
+              <li>Designed a MySQL database with proper structure for users, products, orders, and categories.</li>
+              <li>Built React.js frontend with product search, filters, live cart updates, and a simple checkout process.</li>
+              <li>Wrote unit tests with pytest to check if all features work correctly and deployed on Railway.</li>
+            </ul>
+          </div>
+
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>HireHub — Job Portal Web Application</strong>
+              <span>2025</span>
+            </div>
+            <div class="r-item-sub">Django, React.js, MySQL, REST API</div>
+            <ul>
+              <li>Built a job portal where employers can post jobs and job seekers can apply and track their applications.</li>
+              <li>Created REST APIs for job listings, applications, and user profiles with role-based authentication.</li>
+              <li>Designed React.js interface with search filters for jobs by location, title, and salary.</li>
+              <li>Optimized MySQL queries for faster job search results and deployed on Railway.</li>
+            </ul>
+          </div>
+
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>TaskFlow — Team Task Management App</strong>
+              <span>2025</span>
+            </div>
+            <div class="r-item-sub">Flask, React.js, MySQL, REST API</div>
+            <ul>
+              <li>Developed a task management app where teams can create boards and organize tasks using a Kanban board (drag and drop).</li>
+              <li>Built Flask REST APIs for board management, task operations, and team member handling with JWT login.</li>
+              <li>Created React.js frontend with drag-and-drop cards across columns (To Do, In Progress, Done).</li>
+              <li>Wrote pytest tests for all APIs and deployed on Heroku with production database setup.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="r-section">
+          <h3>EXPERIENCE</h3>
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>Software Developer Intern — Central Coalfield Limited</strong>
+              <span>June 2025</span>
+            </div>
+            <div class="r-item-sub">Ranchi, Jharkhand</div>
+            <ul>
+              <li>Built web-based tools using Python, Django, and MySQL to automate manual data entry for different departments.</li>
+              <li>Wrote SQL queries to pull data from databases and generate reports quickly for the team.</li>
+              <li>Worked with team members to understand requirements and deliver working tools on time.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="r-section">
+          <h3>EDUCATION</h3>
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>Birla Institute of Technology, Mesra — Master of Computer Applications (MCA)</strong>
+              <span>Aug 2024 – May 2026</span>
+            </div>
+            <div class="r-item-sub">Ranchi, Jharkhand | CGPA: 8.12 / 10.0</div>
+          </div>
+          <div class="r-item">
+            <div class="r-item-head">
+              <strong>Birla Institute of Technology, Mesra — Bachelor of Computer Applications (BCA)</strong>
+              <span>Aug 2021 – May 2024</span>
+            </div>
+            <div class="r-item-sub">Ranchi, Jharkhand | CGPA: 7.77 / 10.0</div>
+          </div>
+        </div>
+
+        <div class="r-section">
+          <h3>CERTIFICATIONS</h3>
+          <ul>
+            <li>Python Full Stack Developer Path — Udemy (2025)</li>
+            <li>SQL for Developers Certification — SkillCourse (2025)</li>
+            <li>Git & GitHub — Coursera (2024)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
